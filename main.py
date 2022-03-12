@@ -153,25 +153,6 @@ class BinarySearchTree:
 
 # Functions to check the tree
 def binary_search_tree():
-    r"""
-    Example
-                  8
-                 / \
-                3   10
-               / \    \
-              1   6    14
-                 / \   /
-                4   7 13
-    >>> t = BinarySearchTree().insert(8, 3, 6, 1, 10, 14, 13, 4, 7)
-    >>> print(" ".join(repr(i.value) for i in t.traversal_tree()))
-    8 3 1 6 4 7 10 14 13
-    >>> print(" ".join(repr(i.value) for i in t.traversal_tree(postorder)))
-    1 4 7 6 3 13 14 10 8
-    >>> BinarySearchTree().search(6)
-    Traceback (most recent call last):
-    ...
-    IndexError: Warning: Tree is empty! please use another.
-    """
     testlist = (8, 3, 6, 1, 10, 14, 13, 4, 7)
     t = BinarySearchTree()
     for i in testlist:
@@ -180,6 +161,7 @@ def binary_search_tree():
     # Prints all the elements of the list in order traversal
     print(t)
 
+    # Checks
     if t.search(6) is not None:
         print("The value 6 exists")
     else:
@@ -200,4 +182,4 @@ def binary_search_tree():
 
 
 if __name__ == "__main__":
-    import doctest
+    binary_search_tree()
