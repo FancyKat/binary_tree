@@ -3,7 +3,7 @@ A binary search Tree
 """
 
 
-class Node:
+class Node:  # Creates Node to check each value and evaluate it's position
     def __init__(self, value, parent):
         self.value = value
         self.parent = parent  # Added in order to delete a node easier
@@ -152,6 +152,8 @@ class BinarySearchTree:
         return node_list
 
 # Functions to check the tree
+
+
 def binary_search_tree():
     testlist = (8, 3, 6, 1, 10, 14, 13, 4, 7)
     t = BinarySearchTree()
